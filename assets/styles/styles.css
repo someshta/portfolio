@@ -1,0 +1,105 @@
+body {
+    background-color: lavender;
+}
+
+/* Nav Bar */
+.navbar {
+    opacity: .9;
+    background-color: #b3f2ba;
+}
+.nav-link {
+    font-family: Lora;
+}
+
+/* Home Page  */
+#home-page {
+    background-color: #c7efcc;
+    height: 50rem;
+    border: .125rem solid black;
+    
+}
+
+#name {
+    height: 30rem;
+    border: 2px solid green;
+}
+
+#header {
+    border: .125rem solid purple;
+    padding: .625rem;
+    margin: auto;
+    margin-top: 10rem;
+    text-align: center;
+    font-family: Princess Sofia;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+#intro {
+    height: 20rem;
+    border: 2px solid red;
+    padding: 2rem;
+    margin: auto;
+    font-family: Lora;
+    font-size: 2rem;
+    text-align: center!important;
+}
+
+/* About Page */
+#about-page {
+    height: 40rem;
+    background-color:#61c0b7;
+}
+
+h1 {
+    font-family: Princess Sofia;
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#about-me {
+    padding: 5rem;
+    font-family: Lora;
+    font-size: 1rem;
+}
+
+/* Portfolio Page */
+#portfolio-page {
+    height: 50rem;
+    background-color: #b17eab
+}
+
+.project {
+    height: 14rem;
+    border: 2px solid yellow;
+    padding: 1rem;
+    margin: auto;
+}
+
+/* Contact-Page */
+#contact-page {
+    height: 50rem;
+    background-color: #6f5797
+}
+
+.contact {
+    
+}
+#contact-button {
+    background-color: #00638d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-family: Lora;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5%;
+
+}
+
+.top{
+    padding: 5rem;
+}
