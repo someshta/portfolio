@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Delius|Give+You+Glory|Princess+Sofia|Sue+Ellen+Francisco|Lora" rel="stylesheet">
   </head>
   <body>
+      <div class="bg"></div>
 <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link smooth" href="#home-page">Home <span class="sr-only">(current)</span></a>
@@ -31,12 +32,12 @@
         <div style="display: inline-block">
             <ul class="ml-auto nav navbar-nav" style="list-style-type: none; padding: 0; margin: 0;"> 
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.github.com/someshta">
+                    <a class="nav-link" href="https://www.github.com/someshta" target="_blank">
                         <img src="./assets/images/github.ico" alt="github" height="25" width="25">
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/morgancrosta">
+                    <a class="nav-link" href="https://www.linkedin.com/in/morgancrosta/" target="_blank">
                         <img src="./assets/images/linkedin.png" alt="linkedin" height="25" width="25">
                     </a>
                 </li>
@@ -47,67 +48,113 @@
     <!--Home page-->
     <div class="container-fluid" id="home-page">
         <div class="row" id="name">
-            <div class="col-sm-10" id="header">
-                <p>Morgan Crosta</p>
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6" >
+                <h1 id="header">Morgan Crosta</h1>
+                <p id="subheader">Let your website tell a story.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-8" id="intro">
-                <p>Hello, my name is Morgan. I'm a web designer and developer with a love for creating beautiful, functional websites.</p>
-            </div>
+            <div class="col-sm-12" id="intro">
+                <p id="introtext">Hello, my name is Morgan. I'm a web designer and developer with a love for creating beautiful, functional websites.</p>
+            </div>           
         </div>
     </div>
     
     <!--About me-->
-    <div id="about-page">
-        <div class="row">
+    <div class="container-fluid" id="about-page">
+        <div class="row top">
             <div class="col-sm-6">
-                <img src="./assets/images/me.jpg" alt="Image" width="100%">
+                <img src="./assets/images/me.jpg" alt="Image" id="me">
             </div>
             <div class="col-sm-6" id="about-me">
                 <h1>About Me</h1>
-               <p>This is a paragraph about me! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis fringilla lobortis. Etiam sit amet elementum orci, vel dictum metus. Praesent consectetur magna arcu, ac consequat diam dictum sed. Vestibulum fringilla commodo sem. Proin vulputate ex sit amet scelerisque egestas. Etiam sem libero, sollicitudin non purus sed, varius ultrices augue. Mauris eu ipsum ut nunc lacinia luctus. Suspendisse eleifend felis lectus, malesuada sollicitudin velit auctor id. Morbi sollicitudin felis ac tellus vulputate, eu dapibus quam faucibus. Vestibulum et dolor nec nibh condimentum dignissim. Etiam vel commodo ante.</p> 
+                <p>My background in design gave me my first taste of coding, and since then, I’ve always wanted to return to it and combine my creativity with a solid tech skills set. This ambition led me to enhance my coding skills at the UC Davis full stack web development bootcamp, which will allow me to create beautiful and efficient applications. I love traveling and I hope to one day run a company that will help further the opportunities for women around the world.</p> 
             </div>
         </div>
     </div>
 
     <!--Portfolio-->
-    <div id="portfolio-page">
+    <div class="container-fluid"id="portfolio-page">
         <div class="row top">
-            <div class="col-sm-4">
-                <h1>Portfolio</h1>
-            </div>
+            <div class="col-sm-10 resume">
+                <h1>Portfolio & <a href="./assets/images/me.jpg" download id="resLink">Resume</a></h1>               
+            </div>            
         </div>
+        <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3 project">
-                <button class="">VineQuest</button>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10" id="frame">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="projectInfo">
+                                <div>
+                                    <h1>one</h1>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste aliquid velit? Nisi velit eius ad? Sed, iste architecto? Eveniet, consequatur. Harum optio omnis quae itaque voluptates, exercitationem debitis qui eos, odit voluptatum consectetur officia praesentium pariatur dignissimos, reiciendis atque repudiandae aspernatur ea quos esse! Quidem molestiae repellendus minima facere.
+                                    </p>
+                                </div>
+                          </div>
+                        
+                      </div>
+                      <div class="carousel-item">
+                        <div class="projectInfo">
+                            <div>
+                                <h1>two</h1>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste aliquid velit? Nisi velit eius ad? Sed, iste architecto? Eveniet, consequatur. Harum optio omnis quae itaque voluptates, exercitationem debitis qui eos, odit voluptatum consectetur officia praesentium pariatur dignissimos, reiciendis atque repudiandae aspernatur ea quos esse! Quidem molestiae repellendus minima facere.
+                                </p>
+                            </div>
+                      </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="projectInfo">
+                            <div>
+                                <h1>three</h1>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste aliquid velit? Nisi velit eius ad? Sed, iste architecto? Eveniet, consequatur. Harum optio omnis quae itaque voluptates, exercitationem debitis qui eos, odit voluptatum consectetur officia praesentium pariatur dignissimos, reiciendis atque repudiandae aspernatur ea quos esse! Quidem molestiae repellendus minima facere.
+                                </p>
+                            </div>
+                      </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
             </div>
-            <div class="col-sm-3 project">
-                    <button class="">Gems Sacramento</button>
-            </div>
+            <div class="col-sm-1"></div>
         </div>
+        </div>
+        
     </div>
 
     <!--Contact-->
-    <div id="contact-page">
+    <div class="container-fluid"id="contact-page">
         <div class="row top">
-            <div class="col-sm-3">
+            <div class="col-sm-10 contact">
                 <h1>Contact</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <!-- <form> -->
-                    <input class="form-control form-control-lg contact" type="text" placeholder="Name"><br>
-                    <input class="form-control form-control-lg contact" type="text" placeholder="Email"><br>
-                    <input class="form-control form-control-lg contact" type="text" placeholder="Message"><br>
-                    <button class="sparkley last form" type="submit" id="contact-button">Submit</button>
-                <!-- </form> -->
+            <div class="col-sm-8 form">
+                <form id="contactForm" action="mail.php" method="POST">
+                    <input class="form-control form-control-lg form" type="text" placeholder="Name" name="name"maxlength="100"><br>
+                    <input class="form-control form-control-lg form" type="text" placeholder="Email" name="email"maxlength="100"><br>
+                    <textarea class="form-control form-control-lg form" form="contactForm"id="message"type="text" placeholder="Message" name="message" maxlength="500"></textarea><br>
+                    <input type="submit" value="Send" id="contact-button" class="sparkley last form">
+                    <!-- <button class="sparkley last form" type="submit" id="contact-button">Submit</button> -->
+                </form>
             </div>
             <div class="col-sm-2"></div>
         </div>
-        
     </div>
 
     <!-- Optional JavaScript -->

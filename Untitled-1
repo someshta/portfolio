@@ -1,0 +1,222 @@
+<div class="row">
+            <div class="col-sm-3 project">
+                    <!-- Button trigger modal -->
+                    <div class="con">
+                            <button type="button" class="btn btn-primary projbtn" data-toggle="modal" data-target="#psychic">
+                                Pyschic Game
+                            </button> 
+                            </div> 
+                    <!-- Modal -->
+                    <div class="modal fade" id="psychic" tabindex="-1" role="dialog" aria-labelledby="psychic" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="psychic">Pyschic Game</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img src="./assets/images/psychic.png" alt="psychic" height="376" width="700" class="projScreenShot">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-5 roleTech">
+                                            <div class="role">Front End Development</div>
+                                            <div class="role">UI Design</div>
+                                            <div class="technologies">
+                                                Technologies used:
+                                                <ul class="technologiesList">
+                                                    <li>HTML & CSS</li>
+                                                    <li>JavaScript & jQuery</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-7 projInfo">
+                                            <div class="projDescription">
+                                                <p>HW</p>
+                                            </div>
+                                        </div>
+                                    </div>                              
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="https://someshta.github.io/psychic-game.github.io/" target="_blank"><button type="button" class="btn btn-primary">Launch Application</button></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm-3 project"></div>
+            <div class="col-sm-3 project">
+                    <!-- Button trigger modal -->
+                    <div class="con">
+                    <button type="button" class="btn btn-primary projbtn" data-toggle="modal" data-target="#gemsSac">
+                        Gems Sacramento
+                    </button> 
+                    </div> 
+                    <!-- Modal -->
+                    <div class="modal fade" id="gemsSac" tabindex="-1" role="dialog" aria-labelledby="gemsSac" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="gemsSac">Gems Sacramento</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img src="./assets/images/gems.png" alt="vinequest" height="376" width="700" class="projScreenShot">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-5 roleTech">
+                                            <div class="role">Front End Development</div>
+                                            <div class="role">UI Design</div>
+                                            <div class="role">Backend Development</div>
+                                            <div class="technologies">
+                                                Technologies used:
+                                                <ul class="technologiesList">
+                                                    <li>HTML & CSS</li>
+                                                    <li>Bootstrap</li>
+                                                    <li>JavaScript & jQuery</li>
+                                                    <li>HandlebarsJS</li>
+                                                    <li>MySQL/Sequelize</li>
+                                                    <li>NodeJS</li>
+                                                    <li>ExpressJS</li>
+                                                    <li>PassportJS</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-7 projInfo">
+                                            <div class="projDescription">
+                                                <p>This is an idea that stemmed from being a broke student and wanting to maintain an active and social lifestyle. Gems Sacramento is a community based app that encourages users to post about their favorite local (and free) spots and events in town. Share and discover your cities gems! </p>
+                                            </div>
+                                        </div>
+                                    </div>                              
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="https://murmuring-bastion-76922.herokuapp.com/gems/all" target="_blank"><button type="button" class="btn btn-primary">Launch Application</button></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm-3 project"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 project"></div>
+            <div class="col-sm-3 project">
+                <!-- Button trigger modal -->
+                <div class="con">
+                    <button type="button" class="btn btn-primary projbtn" data-toggle="modal" data-target="#vineQuest">
+                        VineQuest
+                    </button> 
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="vineQuest" tabindex="-1" role="dialog" aria-labelledby="vineQuest" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="vineQuest">VineQuest</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="./assets/images/vinequest.png" alt="vinequest" height="376" width="700" class="projScreenShot">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-5 roleTech">
+                                        <div class="role">Front End Development</div>
+                                        <div class="role">UI Design</div>
+                                        <div class="technologies">
+                                            Technologies used:
+                                            <ul class="technologiesList">
+                                                <li>HTML & CSS</li>
+                                                <li>JavaScript & jQuery</li>
+                                                <li>Firebase</li>
+                                                <li>APIs</li>
+                                                <li>Foundation</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7 projInfo">
+                                        <div class="projDescription">
+                                            <p>My very first front end application. A hub for wine enthusiasts to search for wineries, read reviews and discover photos. Save your searches and plan your next wine tasting adventure! </p>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a href="https://someshta.github.io/VineQuest/" target="_blank"><button type="button" class="btn btn-primary">Launch Application</button></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-3 project"></div>
+            <div class="col-sm-3 project">
+                <!-- Button trigger modal -->
+                <div class="con">
+
+                        <button type="button" class="btn btn-primary projbtn" data-toggle="modal" data-target="#samsCloak">
+                            The Traveler's Cloak
+                        </button> 
+                        </div>
+                <!-- Modal -->
+                <div class="modal fade" id="samsCloak" tabindex="-1" role="dialog" aria-labelledby="samsCloak" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="vineQuest">The Traveler's Cloak</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="./assets/images/vinequest.png" alt="vinequest" height="376" width="700" class="projScreenShot">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-5 roleTech">
+                                        <div class="role">Customized Design</div>
+                                        <div class="role">Patternmaking</div>
+                                        <div class="role">Machine & Hand Sewing</div>
+                                    </div>
+                                    <div class="col-sm-7 projInfo">
+                                        <div class="projDescription">
+                                            <p>This was probably the most fun I ever had sewing. A customized traveling cloak designed for my best friend. Sewn with stardust and faerie magic. Hidden within the lining are over a dozen pockets of all shapes and sizes. Fully reversible. </p>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a href="https://someshta.github.io/VineQuest/" target="_blank"><button type="button" class="btn btn-primary">Launch Application</button></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>

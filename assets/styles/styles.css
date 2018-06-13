@@ -1,105 +1,292 @@
-body {
-    background-color: lavender;
+
+@font-face{
+    font-family: 'Spinn';
+    src: url('spinn.otf') format('truetype');
+}
+@font-face{
+    font-family: 'Champagne';
+    src: url('champ.ttf') format('truetype');
+}
+
+/* body {
+    /* background: linear-gradient(#bcc8ff, #f3e0f9, #c49ed5); */
+    /* background-image: url("../images/swing.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+} */ 
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url("../images/swing.png");
+    height: 100%; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Nav Bar */
+
 .navbar {
     opacity: .9;
-    background-color: #b3f2ba;
+    background-color: #cae5a2;
+    transition: top 0.3s; 
 }
 .nav-link {
-    font-family: Lora;
+    font-family: Champagne;
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
 }
 
 /* Home Page  */
 #home-page {
-    background-color: #c7efcc;
-    height: 50rem;
-    border: .125rem solid black;
-    
+    height: 55.5rem;   
 }
 
 #name {
-    height: 30rem;
-    border: 2px solid green;
+    height: 40.5rem;
+    margin-top: 5rem;
 }
 
 #header {
-    border: .125rem solid purple;
     padding: .625rem;
-    margin: auto;
     margin-top: 10rem;
     text-align: center;
-    font-family: Princess Sofia;
-    font-size: 6rem;
+    font-family: Spinn;
+    font-size: 8rem;
     font-weight: bold;
+    color: Black;
+    text-shadow: 3px 2px #8c97e8;
+}
+
+#subheader{
+    text-align: center;
+    color: black;
+    font-family: Champagne;
+    font-size: 2rem;
 }
 
 #intro {
-    height: 20rem;
-    border: 2px solid red;
+    background-color:rgb(253, 252, 248, 1.0);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 15rem;
     padding: 2rem;
     margin: auto;
-    font-family: Lora;
+    vertical-align: baseline;
+    padding: 4rem 0 4rem 0;   
+}
+
+#introtext{
+    width: 800px;
+    margin: 0 auto;
+    font-family: Champagne;
     font-size: 2rem;
     text-align: center!important;
+
 }
+
+.job{
+    height: 10rem;
+    width: 10rem;
+    border: #8c97e8 solid 1px;
+    background-color: #f3e0f9;
+    border-radius: 50%;
+}
+
 
 /* About Page */
 #about-page {
     height: 40rem;
-    background-color:#61c0b7;
+    background-color:rgb(253, 252, 248, .7);
 }
 
 h1 {
-    font-family: Princess Sofia;
-    font-size: 4rem;
-    text-align: center;
+    font-family: Spinn;
+    font-size: 4.6rem;
     padding: 1rem;
+    text-align: center;
+}
+
+#me {
+    height: auto;
+    max-width: 100%;
+    padding: 5rem 3rem 3rem 3rem;
+    opacity: 1.0;
 }
 
 #about-me {
-    padding: 5rem;
-    font-family: Lora;
-    font-size: 1rem;
+    padding-top: 5rem;
+    padding-right: 3rem;
+    font-family: Champagne;
+    font-size: 1.3rem;
+    letter-spacing: .05rem;
 }
 
 /* Portfolio Page */
 #portfolio-page {
-    height: 50rem;
-    background-color: #b17eab
+    height: 40rem;
+    background-color: rgb(253, 252, 248, .7);
 }
+
+.top{
+    padding: 5rem 0rem 0rem 0rem;
+}
+
+.resume{
+    text-align: center;
+    margin: auto;
+}
+
+#resLink{
+    color: #62853a;
+}
+
+#frame{
+    height: 30rem;
+    width: ;
+    border: 2px solid black; 
+}
+
+/* .projectInfo{
+    height: 36rem;
+    width: ;
+    border: 2px solid black;
+    background-image: url("../images/vineFrame.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 
 .project {
     height: 14rem;
-    border: 2px solid yellow;
-    padding: 1rem;
     margin: auto;
+    border: 2px solid black;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.con {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+  /* Make the image responsive */
+.con img {
+    width: 100%;
+    height: auto;
+}
+  /* Style the button and place it in the middle of the container/image */
+.con .projbtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    background-color: #775bb7;
+    border: none;
+    color: white;
+    font-family: Champagne;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    border-radius: 5%;
+}
+
+.con .btn:hover {
+    background-color: #8c97e8;
+}
+
+/* Project Modals */
+.modal-title{
+    font-family: Champagne;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.projInfo{
+    padding-right: 5rem;
+}
+
+.roleTech{
+    padding-left: 5rem;
+}
+
+.role {
+    font-family: Champagne;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+.technologies{
+    font-family: Champagne;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.technologiesList{
+    font-family: Champagne;
+    font-size: 1.3rem;
+}
+
+.projDescription{
+    font-family: Champagne;
+    font-size: 1.3rem;
+}
+
+.projScreenShot{
+    padding: .5rem 2rem 2rem 2rem;
 }
 
 /* Contact-Page */
 #contact-page {
-    height: 50rem;
-    background-color: #6f5797
+    height: 48rem;
+    background-color: rgb(253, 252, 248, .7);
 }
 
 .contact {
+    text-align: center;
+    margin: auto;
+}
+
+.form{
+    text-align: left;
+    font-family: Champagne;
+    font-size: 1.3rem;
     
 }
+
+input[type=text]{
+    border: 2px solid black;
+}
+
+textarea[type=text]{
+    border: 2px solid black;
+}
+
+#contactForm{
+    padding-top: 3rem;
+}
+
+#message{
+    height: 13rem;
+}
+
 #contact-button {
-    background-color: #00638d; /* Green */
+    background-color: #775bb7;
     border: none;
     color: white;
     padding: 15px 32px;
-    font-family: Lora;
+    font-family: Champagne;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.3rem;
     border-radius: 5%;
-
+    margin-bottom: 3rem;
 }
 
-.top{
-    padding: 5rem;
-}

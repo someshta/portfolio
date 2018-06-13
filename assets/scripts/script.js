@@ -1,22 +1,50 @@
+//smooth page transition on navbar click
 $(document).ready(function(){           
     $(".smooth").on('click', function(event) {      
         // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();      
-            // Store hash
-            var hash = this.hash;     
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){        
-            // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
-        });
+      if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();      
+          // Store hash
+          var hash = this.hash;     
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){        
+          // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+      } // End if
+    });
 });
+
+//navbar fade in and out on scroll
+(function ($) {
+  $(document).ready(function(){
+    // hide .navbar first
+    $("#nav").hide();
+    // fade in .navbar
+    $(function () {
+      $(window).scroll(function () {
+        // set distance user needs to scroll before we start fadeIn
+        if ($(this).scrollTop() > 100) {
+          $('#nav').fadeIn();
+        } else {
+          $('#nav').fadeOut();
+        }
+      });
+    });
+});
+}(jQuery));
+
+
+  $("#contact-button").on(click, function(){
+    console.log("you submitted your message!");
+  });
+
+
+  //sparkle button
 
 $(function() {
 
@@ -29,8 +57,8 @@ $(function() {
     // overlap allows sparkles to migrate... watch out for other dom elements though.
     $(".sparkley:last").sparkleh({
       color: "rainbow",
-      count: 100,
-      overlap: 10
+      count: 20,
+      overlap: 5
     });
     
     // here we create fuscia sparkles
