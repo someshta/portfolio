@@ -7,31 +7,41 @@
     font-family: 'Champagne';
     src: url('champ.ttf') format('truetype');
 }
-
-/* body {
-    /* background: linear-gradient(#bcc8ff, #f3e0f9, #c49ed5); */
-    /* background-image: url("../images/swing.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-} */ 
+@font-face{
+    font-family: 'Sunrise';
+    src: url('Sunrise.otf') format('truetype');
+}
+@font-face{
+    font-family: 'Delish';
+    src: url('Delish.otf') format('truetype');
+}
+@font-face{
+    font-family: 'Betty';
+    src: url('betty.ttf') format('truetype');
+}
 
 body, html {
     height: 100%;
     margin: 0;
     background-image: url("../images/swing.png");
+    background-color: #f5f7ed;
     height: 100%; 
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-/* Nav Bar */
-
+/* Nav Bar  */
 .navbar {
-    opacity: .9;
-    background-color: #cae5a2;
+    background-color: #f5f7ed;
     transition: top 0.3s; 
+}
+
+.navbar-brand{
+    font-family: Spinn;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.3rem;
 }
 .nav-link {
     font-family: Champagne;
@@ -41,7 +51,7 @@ body, html {
 
 /* Home Page  */
 #home-page {
-    height: 55.5rem;   
+    /* height: 55.5rem;    */
 }
 
 #name {
@@ -57,7 +67,7 @@ body, html {
     font-size: 8rem;
     font-weight: bold;
     color: Black;
-    text-shadow: 3px 2px #8c97e8;
+    text-shadow: 3px 2px #d4b9bb;
 }
 
 #subheader{
@@ -68,70 +78,90 @@ body, html {
 }
 
 #intro {
-    background-color:rgb(253, 252, 248, 1.0);
+    background-color: #dce3c5;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    width: 100%;
     height: 15rem;
-    padding: 2rem;
     margin: auto;
-    vertical-align: baseline;
-    padding: 4rem 0 4rem 0;   
+    vertical-align: baseline; 
 }
 
-#introtext{
-    width: 800px;
-    margin: 0 auto;
+#intro>#introtext{
+    width: auto;
+    max-width: 800px;
+    padding-top: 5%;
+    margin: auto;
     font-family: Champagne;
     font-size: 2rem;
     text-align: center!important;
-
 }
-
-.job{
-    height: 10rem;
-    width: 10rem;
-    border: #8c97e8 solid 1px;
-    background-color: #f3e0f9;
-    border-radius: 50%;
-}
-
 
 /* About Page */
-#about-page {
-    height: 40rem;
-    background-color:rgb(253, 252, 248, .7);
+#about-page, .aboutMeRow {
+    /* height: 37rem; */
+    background-color: #f5f7ed;
+    border-bottom: 1px solid black;   
 }
 
 h1 {
     font-family: Spinn;
     font-size: 4.6rem;
-    padding: 1rem;
-    text-align: center;
+    /* padding: 1rem; */
+    /* text-align: center; */
 }
 
-#me {
+.me img{
+    width: 100%;
     height: auto;
-    max-width: 100%;
-    padding: 5rem 3rem 3rem 3rem;
-    opacity: 1.0;
+    max-height: 100%;
+    margin: auto;
+    padding: 0;
 }
 
 #about-me {
-    padding-top: 5rem;
-    padding-right: 3rem;
+    background-color: #f5f7ed;
     font-family: Champagne;
     font-size: 1.3rem;
     letter-spacing: .05rem;
+    margin: auto;
 }
 
 /* Portfolio Page */
 #portfolio-page {
-    height: 40rem;
-    background-color: rgb(253, 252, 248, .7);
+    /* height: 67rem; */
+    background-color:  #dce3c5;
+}
+
+.services{
+    text-align: center;
+    font-family: Champagne;
+    padding: 1rem;
+}
+
+.serviceLogoImg{
+    width: 100px;
+    height: 100px;
+}
+
+.atYourService{
+    padding-bottom: 5rem;
+}
+
+.serviceTitle{
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.serviceDescription{
+    margin: auto;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 .top{
-    padding: 5rem 0rem 0rem 0rem;
+    padding: 5rem 0rem 5rem 0rem;
 }
 
 .resume{
@@ -141,64 +171,155 @@ h1 {
 
 #resLink{
     color: #62853a;
+    font-family: Spinn;
+    font-size: 4.6rem;
 }
-
-#frame{
-    height: 30rem;
-    width: ;
-    border: 2px solid black; 
-}
-
-/* .projectInfo{
-    height: 36rem;
-    width: ;
-    border: 2px solid black;
-    background-image: url("../images/vineFrame.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 .project {
     height: 14rem;
-    margin: auto;
-    border: 2px solid black;
+    display: inline-block;
+    
 }
 
-/* Container needed to position the button. Adjust the width as needed */
-.con {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-  /* Make the image responsive */
-.con img {
-    width: 100%;
-    height: auto;
-}
-  /* Style the button and place it in the middle of the container/image */
-.con .projbtn {
+.projectName{
+    color:black;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    font-size: 1.3rem;
+    white-space: nowrap;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    background-color: #775bb7;
-    border: none;
-    color: white;
-    font-family: Champagne;
+    font-family: Betty;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.3rem;
-    border-radius: 5%;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-.con .btn:hover {
-    background-color: #8c97e8;
+.col-sm{
+    padding: none;
+}
+
+.con1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f7fce6;
+}
+  
+.project:hover .con1 {
+    opacity: .5;
+}
+
+.con2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #d4b9bb;
+}
+  
+.project:hover .con2 {
+    opacity: .5;
+}
+  
+.con3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #c4d3b4;
+}
+  
+.project:hover .con3 {
+    opacity: .5;
+}
+
+.con4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f0f5dc;
+}
+  
+.project:hover .con4 {
+    opacity: .5;
+}
+
+.projectLinks {
+    color:black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    white-space: nowrap;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-family: Betty;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.projectLinks:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.boxOne {
+    background-image: url("../images/haven.jpg");
+    background-size: 100%;   
+}
+
+.boxTwo{
+    background-image: url("../images/birds.jpg");
+    /* background-size: contain; */
+}
+
+.boxThree{
+    background-image: url("../images/sprig.png");
+    /* background-size: contain; */    
+}
+
+.boxFour{
+    background-image: url("../images/harlequin.jpg");
+    background-size: contain;
+}
+
+.projectRows{
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 /* Project Modals */
@@ -208,85 +329,84 @@ h1 {
     font-weight: bolder;
 }
 
-.projInfo{
-    padding-right: 5rem;
+.modal-header,.modal-body, .modal-footer{
+    background-color: #f5f7ed;
 }
 
-.roleTech{
-    padding-left: 5rem;
+.modal-header{
+    border-bottom: 1px solid black;
+}
+.modal-footer{
+    border-top: 1px solid black;
+}
+
+.projScreenShot{
+    width: 100%;
+    height: auto;
+}
+
+.projInfo, .roleTech{
+    padding: 3rem;
 }
 
 .role {
     font-family: Champagne;
     font-style: italic;
     font-size: 1.3rem;
+    padding: .25rem;
 }
 
 .technologies{
     font-family: Champagne;
     font-weight: bold;
     font-size: 1.3rem;
+    padding-top: 1rem;
 }
 
-.technologiesList{
+.technologiesList, .projDescription{
     font-family: Champagne;
     font-size: 1.3rem;
 }
 
-.projDescription{
-    font-family: Champagne;
-    font-size: 1.3rem;
-}
-
-.projScreenShot{
+.project-image{
     padding: .5rem 2rem 2rem 2rem;
+    height: 376px;
+    width: 700px;
+}
+
+.closebtn{
+    font-family: Champagne;
+    font-size: 1.3rem;
+    background-color: #dce3c5;
+}
+
+.launchbtn{
+    font-family: Champagne;
+    font-size: 1.3rem;
+    background-color: #d4b9bb;
 }
 
 /* Contact-Page */
 #contact-page {
-    height: 48rem;
-    background-color: rgb(253, 252, 248, .7);
+    background-color: #f5f7ed;
 }
 
-.contact {
-    text-align: center;
-    margin: auto;
-}
-
-.form{
-    text-align: left;
+a, .portfolioLinks{
     font-family: Champagne;
     font-size: 1.3rem;
-    
+    color: black;
 }
 
-input[type=text]{
-    border: 2px solid black;
-}
-
-textarea[type=text]{
-    border: 2px solid black;
-}
-
-#contactForm{
-    padding-top: 3rem;
-}
-
-#message{
-    height: 13rem;
-}
-
-#contact-button {
-    background-color: #775bb7;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    font-family: Champagne;
-    text-align: center;
+a:hover{
+    color: #62853a;
     text-decoration: none;
-    display: inline-block;
-    font-size: 1.3rem;
-    border-radius: 5%;
-    margin-bottom: 3rem;
+}
+
+.log{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
 }
 

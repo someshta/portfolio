@@ -1,22 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>Morgan Crosta | Web Design & Development</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS & Fonts -->
     <link rel="stylesheet" href="./assets/styles/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Delius|Give+You+Glory|Princess+Sofia|Sue+Ellen+Francisco|Lora" rel="stylesheet">
-  </head>
-  <body>
-      <div class="bg"></div>
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    
 <!--Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+        <a class="navbar-brand mr-auto" href="#home-page">Morgan Crosta</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
                 <a class="nav-link smooth" href="#home-page">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -29,136 +39,372 @@
                 <a class="nav-link smooth" href="#contact-page">Contact</a>
             </li>
         </ul>
+        </div>
         <div style="display: inline-block">
-            <ul class="ml-auto nav navbar-nav" style="list-style-type: none; padding: 0; margin: 0;"> 
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.github.com/someshta" target="_blank">
-                        <img src="./assets/images/github.ico" alt="github" height="25" width="25">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/morgancrosta/" target="_blank">
-                        <img src="./assets/images/linkedin.png" alt="linkedin" height="25" width="25">
-                    </a>
-                </li>
-            </ul>
+            
         </div>
     </nav>
     
     <!--Home page-->
-    <div class="container-fluid" id="home-page">
-        <div class="row" id="name">
-            <div class="col-sm-6"></div>
-            <div class="col-sm-6" >
-                <h1 id="header">Morgan Crosta</h1>
-                <p id="subheader">Let your website tell a story.</p>
+    <section id="home-page">
+        <div class="container-fluid">
+            <div class="row" id="name">
+                <div class="col-sm-6"></div>
+                <div class="col-sm-6" >
+                    <h1 id="header">Morgan Crosta</h1>
+                    <p id="subheader">Let your website tell a story.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" id="intro">
+                    <p id="introtext" >Hello, my name is Morgan. I'm a web designer and developer with a love for creating beautiful, functional websites.</p>
+                </div>           
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12" id="intro">
-                <p id="introtext">Hello, my name is Morgan. I'm a web designer and developer with a love for creating beautiful, functional websites.</p>
-            </div>           
-        </div>
-    </div>
+    </section>
     
     <!--About me-->
-    <div class="container-fluid" id="about-page">
-        <div class="row top">
-            <div class="col-sm-6">
-                <img src="./assets/images/me.jpg" alt="Image" id="me">
-            </div>
-            <div class="col-sm-6" id="about-me">
-                <h1>About Me</h1>
-                <p>My background in design gave me my first taste of coding, and since then, I’ve always wanted to return to it and combine my creativity with a solid tech skills set. This ambition led me to enhance my coding skills at the UC Davis full stack web development bootcamp, which will allow me to create beautiful and efficient applications. I love traveling and I hope to one day run a company that will help further the opportunities for women around the world.</p> 
+    <section id="about-page">
+        <div class="container-fluid">
+            <div class="row aboutMeRow">
+                <div class="col-sm me"><img src="./assets/images/me.jpg" alt=""></div>
+                <div class="col-sm" id="about-me">
+                    <h1>About Me</h1>
+                    <p>In 2012, as I was pursuing a degree in apparel design, I took a required course on web development. My initial thought was "Why do I need to do this?" In no time at all Coding 101 became my favorite class, thus beginning my journey into the world of web development. After graduation I quickly realized the fashion industry wasn't right for me, but I never lost my love for design. In late 2017 I decided to sign up for UC Davis's coding bootcamp, where I could rekindle that HTML flame and put my design skills to use once again. Now I'm a junior developer, in love with what I do, ready to share my sparkle with the world.
+                    </p> 
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--Portfolio-->
-    <div class="container-fluid"id="portfolio-page">
-        <div class="row top">
-            <div class="col-sm-10 resume">
-                <h1>Portfolio & <a href="./assets/images/me.jpg" download id="resLink">Resume</a></h1>               
-            </div>            
-        </div>
+    <section id="portfolio-page">
         <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10" id="frame">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <div class="projectInfo">
-                                <div>
-                                    <h1>one</h1>
-                                    <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste aliquid velit? Nisi velit eius ad? Sed, iste architecto? Eveniet, consequatur. Harum optio omnis quae itaque voluptates, exercitationem debitis qui eos, odit voluptatum consectetur officia praesentium pariatur dignissimos, reiciendis atque repudiandae aspernatur ea quos esse! Quidem molestiae repellendus minima facere.
-                                    </p>
+            <div class="row top">
+                    <div class="col-sm-10 resume">
+                        <h1>Portfolio & <a href="./assets/images/me.jpg" download id="resLink">Resume</a></h1> 
+                        <hr>              
+                    </div>            
+            </div>
+            <div class="row atYourService">
+            <div class="col-sm-4 services">
+                <div data-sr class="serviceLogo revealIcons">
+                    <img src="./assets/images/lightbulbglow.png" alt="Design" class="serviceLogoImg lightbulb">
+                </div>
+                <div class="serviceTitle">
+                    WEBSITE DESIGN
+                </div>
+                <div class="serviceDescription">
+                    Customized design for pixel perfection
+                </div>
+            </div>
+            <div class="col-sm-4 services">
+                <div data-sr class="serviceLogo revealIcons">
+                    <img src="./assets/images/computer.png" alt="Development" class="serviceLogoImg">
+                </div>
+                <div class="serviceTitle">
+                    FULLSTACK DEVELOPMENT
+                </div>
+                <div class="serviceDescription">
+                    Build your page from scratch
+                </div>
+            </div>
+            <div class="col-sm-4 services">
+                <div data-sr class="serviceLogo revealIcons">
+                    <img src="./assets/images/heart.png" alt="WithLove" class="serviceLogoImg">
+                </div>
+                <div class="serviceTitle">
+                    MADE WITH LOVE
+                </div>
+                <div class="serviceDescription">
+                    Each project made with love <br>(and a little bit of faerie magic)
+                </div>
+            </div>
+            </div>
+            <div class="projectRows">
+                <div class="row toprow">
+                    <div class="col-sm project boxOne"><div class="projectLinks">Psychic Game</div>    
+                        <div class="con1">
+                            <a class='projectLinks' href="#psychic" data-toggle="modal" data-target="#psychic">
+                                Psychic Game
+                            </a>
+                        </div>
+                    </div>    
+                    <div class="modal fade" id="psychic" tabindex="-1" role="dialog" aria-labelledby="psychic" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="psychic">Pyschic Game</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
-                          </div>
-                        
-                      </div>
-                      <div class="carousel-item">
-                        <div class="projectInfo">
-                            <div>
-                                <h1>two</h1>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste aliquid velit? Nisi velit eius ad? Sed, iste architecto? Eveniet, consequatur. Harum optio omnis quae itaque voluptates, exercitationem debitis qui eos, odit voluptatum consectetur officia praesentium pariatur dignissimos, reiciendis atque repudiandae aspernatur ea quos esse! Quidem molestiae repellendus minima facere.
-                                </p>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <img src="./assets/images/psychic.png" alt="psychic" height="376" width="700" class="projScreenShot">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 roleTech">
+                                                <div class="role">Front End Development</div>
+                                                <div class="role">UI Design</div>
+                                                <div class="technologies">
+                                                    Technologies used:
+                                                    <ul class="technologiesList">
+                                                        <li>HTML & CSS</li>
+                                                        <li>JavaScript & jQuery</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 projInfo">
+                                                <div class="projDescription">
+                                                    <p>HW</p>
+                                                </div>
+                                            </div>
+                                        </div>                              
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn closebtn" data-dismiss="modal">Close</button>
+                                    <a href="https://someshta.github.io/psychic-game.github.io/" target="_blank">
+                                        <button type="button" class="btn launchbtn">Launch Application</button>
+                                    </a>
+                                </div>
                             </div>
-                      </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="projectInfo">
-                            <div>
-                                <h1>three</h1>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste aliquid velit? Nisi velit eius ad? Sed, iste architecto? Eveniet, consequatur. Harum optio omnis quae itaque voluptates, exercitationem debitis qui eos, odit voluptatum consectetur officia praesentium pariatur dignissimos, reiciendis atque repudiandae aspernatur ea quos esse! Quidem molestiae repellendus minima facere.
-                                </p>
-                            </div>
-                      </div>
-                      </div>
+                        </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-            </div>
-            <div class="col-sm-1"></div>
+                    <div class="col-sm project boxTwo"><div class="projectLinks">VineQuest</div>
+                        <div class="con2">
+                            <a class='projectLinks' href="#vinequest" data-toggle="modal" data-target="#vinequest">
+                                VineQuest
+                            </a>
+                        </div>
+                    </div>     
+                    <div class="modal fade" id="vinequest" tabindex="-1" role="dialog" aria-labelledby="vinequest" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="vinequest">VineQuest</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <img src="./assets/images/vinequest.png" alt="VineQuest" height="376" width="700" class="projScreenShot">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 roleTech">
+                                                <div class="role">Front End Development</div>
+                                                <div class="role">UI Design</div>
+                                                <div class="technologies">
+                                                    Technologies used:
+                                                    <ul class="technologiesList">
+                                                        <li>HTML & CSS</li>
+                                                        <li>JavaScript & jQuery</li>
+                                                        <li>Firebase</li>
+                                                        <li>API</li>
+                                                        <li>Foundation</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 projInfo">
+                                                <div class="projDescription">
+                                                    <p>My very first front end application. A hub for wine enthusiasts to search for wineries, read reviews and discover photos. Save your searches and plan your next wine tasting adventure!</p>
+                                                </div>
+                                            </div>
+                                        </div>                              
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn closebtn" data-dismiss="modal">Close</button>
+                                    <a href="https://someshta.github.io/VineQuest/" target="_blank">
+                                        <button type="button" class="btn launchbtn">Launch Application</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm project boxThree"><div class="projectLinks">Gems Sacramento</div>
+                        <div class="con3">
+                            <a class='projectLinks' href="#gemsSac" data-toggle="modal" data-target="#gemsSac">
+                                Gems Sacramento
+                            </a>
+                        </div>
+                    </div>     
+                    <div class="modal fade" id="gemsSac" tabindex="-1" role="dialog" aria-labelledby="gemsSac" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="gemsSac">Gems Sacramento</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <img src="./assets/images/gems.png" alt="psychic" height="376" width="700" class="projScreenShot">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 roleTech">
+                                                <div class="role">Front End Development</div>
+                                                <div class="role">UI Design</div>
+                                                <div class="role">Back End Development</div>
+                                                <div class="technologies">
+                                                    Technologies used:
+                                                    <ul class="technologiesList">
+                                                        <li>HTML & CSS</li>
+                                                        <li>Bootstrap</li>
+                                                        <li>JavaScript & jQuery</li>
+                                                        <li>HandlebarsJS</li>
+                                                        <li>MySQL/Sequelize</li>
+                                                        <li>NodeJS</li>
+                                                        <li>ExpressJS</li>
+                                                        <li>PassportJS</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 projInfo">
+                                                <div class="projDescription">
+                                                    <p>This is an idea that stemmed from being a broke student and wanting to maintain an active and social lifestyle. Gems Sacramento is a community based app that encourages users to post about their favorite local (and free) spots and events in town. Share and discover your cities gems!</p>
+                                                </div>
+                                            </div>
+                                        </div>                              
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn closebtn" data-dismiss="modal">Close</button>
+                                    <a href="https://murmuring-bastion-76922.herokuapp.com/gems/all" target="_blank">
+                                        <button type="button" class="btn launchbtn">Launch Application</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="col-sm project boxFour"><div class="projectLinks">Memory Game</div>
+                        <div class="con4">
+                            <a class='projectLinks' href="#clickGame" data-toggle="modal" data-target="#clickGame">
+                                Memory Game
+                            </a>
+                        </div>
+                    </div>     
+                    <div class="modal fade" id="clickGame" tabindex="-1" role="dialog" aria-labelledby="clickGame" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="psychic">React Memory Game</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <img src="./assets/images/clickgame.png" alt="psychic" height="376" width="700" class="projScreenShot">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 roleTech">
+                                                <div class="role">Front End Development</div>
+                                                <div class="role">UI Design</div>
+                                                <div class="technologies">
+                                                    Technologies used:
+                                                    <ul class="technologiesList">
+                                                        <li>ReactJS</li>
+                                                        <li>HTML & CSS</li>
+                                                        <li>Bootstrap</li>
+                                                        <li>JavaScript</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 projInfo">
+                                                <div class="projDescription">
+                                                    <p>A memory game built with ReactJS. Click each card, but only once! A great introduction project using React components and state.</p>
+                                                </div>
+                                            </div>
+                                        </div>                              
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn closebtn" data-dismiss="modal">Close</button>
+                                    <a href="#" target="_blank">
+                                        <button type="button" class="btn launchbtn">Launch Application</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row bottomrow">
+                    <div class="col-sm-3 project boxFour"></div>
+                    <div class="col-sm-3 project boxThree"></div>
+                    <div class="col-sm-3 project boxOne"></div>
+                    <div class="col-sm-3 project boxTwo"></div>   
+                </div> -->
+            </div>    
         </div>
-        </div>
-        
-    </div>
-
+    </section>
+            
     <!--Contact-->
-    <div class="container-fluid"id="contact-page">
-        <div class="row top">
-            <div class="col-sm-10 contact">
-                <h1>Contact</h1>
+    <section id="contact-page">
+        <div class="container-fluid">
+            <div class="row top">
+                <div class="col-sm-8 mx-auto text-center">
+                    <h1>Get In Touch</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm text-center contactIcons">
+                    <i data-sr class="fab fa-github fa-3x "></i>
+                    <p>
+                        <a class="portfolioLinks" href="https://github.com/someshta" target="_blank">Github</a>
+                    </p>
+                </div>
+                <div class="col-sm text-center contactIcons">
+                    <i data-sr class="fab fa-linkedin fa-3x "></i>
+                    <p>
+                        <a class="portfolioLinks" href="https://www.linkedin.com/in/morgancrosta/" target="_blank">LinkedIn</a>
+                    </p>
+                </div>
+                <div class="col-sm text-center contactIcons">
+                    <i data-sr class="fab fa-behance-square fa-3x "></i>
+                    <p>
+                        <a class="portfolioLinks" href="https://www.behance.net/morgancrosta" target="_blank">Behance</a>
+                    </p>
+                </div>
+                <div class="col-sm text-center contactIcons">
+                    <i data-sr class="fas fa-envelope fa-3x "></i>
+                    <p>
+                        <a class="portfolioLinks" href="mailto:morgancrosta@gmail.com">Email</a>
+                    </p>
+                </div>
+                <div class="col-sm text-center contactIcons">
+                    <i data-sr class="fas fa-mobile-alt fa-3x "></i>
+                    <p class="portfolioLinks">1.530.400.9728</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="./assets/images/logcopy.png" alt="" class="log">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8 form">
-                <form id="contactForm" action="mail.php" method="POST">
-                    <input class="form-control form-control-lg form" type="text" placeholder="Name" name="name"maxlength="100"><br>
-                    <input class="form-control form-control-lg form" type="text" placeholder="Email" name="email"maxlength="100"><br>
-                    <textarea class="form-control form-control-lg form" form="contactForm"id="message"type="text" placeholder="Message" name="message" maxlength="500"></textarea><br>
-                    <input type="submit" value="Send" id="contact-button" class="sparkley last form">
-                    <!-- <button class="sparkley last form" type="submit" id="contact-button">Submit</button> -->
-                </form>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-    </div>
+    </section>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
