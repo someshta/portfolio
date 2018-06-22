@@ -24,7 +24,7 @@ body, html {
     height: 100%;
     margin: 0;
     background-image: url("../images/swing.png");
-    background-color: #f5f7ed;
+    background-color: #ebeae8;
     height: 100%; 
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body, html {
 
 /* Nav Bar  */
 .navbar {
-    background-color: #f5f7ed;
+    background-color: #998d93;
     transition: top 0.3s; 
 }
 
@@ -67,7 +67,7 @@ body, html {
     font-size: 8rem;
     font-weight: bold;
     color: Black;
-    text-shadow: 3px 2px #d4b9bb;
+    text-shadow: 3px 2px #998d93;
 }
 
 #subheader{
@@ -78,7 +78,7 @@ body, html {
 }
 
 #intro {
-    background-color: #dce3c5;
+    background-color: #607f75;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     width: 100%;
@@ -90,6 +90,7 @@ body, html {
 #intro>#introtext{
     width: auto;
     max-width: 800px;
+    height: 100%;
     padding-top: 5%;
     margin: auto;
     font-family: Champagne;
@@ -100,7 +101,7 @@ body, html {
 /* About Page */
 #about-page, .aboutMeRow {
     /* height: 37rem; */
-    background-color: #f5f7ed;
+    background-color: #adc4a4;
     border-bottom: 1px solid black;   
 }
 
@@ -120,7 +121,7 @@ h1 {
 }
 
 #about-me {
-    background-color: #f5f7ed;
+    background-color: #adc4a4;
     font-family: Champagne;
     font-size: 1.3rem;
     letter-spacing: .05rem;
@@ -130,7 +131,7 @@ h1 {
 /* Portfolio Page */
 #portfolio-page {
     /* height: 67rem; */
-    background-color:  #dce3c5;
+    background-color:  #ebeae8;
 }
 
 .services{
@@ -170,7 +171,7 @@ h1 {
 }
 
 #resLink{
-    color: #62853a;
+    color: #607f75;
     font-family: Spinn;
     font-size: 4.6rem;
 }
@@ -275,6 +276,7 @@ h1 {
 .projectLinks {
     color:black;
     position: absolute;
+    max-width: 100%; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -388,7 +390,7 @@ h1 {
 
 /* Contact-Page */
 #contact-page {
-    background-color: #f5f7ed;
+    background-color: #c99f9d;
 }
 
 a, .portfolioLinks{
@@ -398,8 +400,8 @@ a, .portfolioLinks{
 }
 
 a:hover{
-    color: #62853a;
-    text-decoration: none;
+    color:black;
+    
 }
 
 .log{
