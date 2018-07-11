@@ -7,25 +7,12 @@
     font-family: 'Champagne';
     src: url('champ.ttf') format('truetype');
 }
-@font-face{
-    font-family: 'Sunrise';
-    src: url('Sunrise.otf') format('truetype');
-}
-@font-face{
-    font-family: 'Delish';
-    src: url('Delish.otf') format('truetype');
-}
-@font-face{
-    font-family: 'Betty';
-    src: url('betty.ttf') format('truetype');
-}
 
 body, html {
     height: 100%;
     margin: 0;
     background-image: url("../images/swing.png");
     background-color: #ebeae8;
-    height: 100%; 
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
@@ -33,7 +20,8 @@ body, html {
 
 /* Nav Bar  */
 .navbar {
-    background-color: #998d93;
+    /* background-color: #998d93; */
+    background-color: #c1aab5;
     transition: top 0.3s; 
 }
 
@@ -43,10 +31,12 @@ body, html {
     font-size: 3rem;
     line-height: 1.3rem;
 }
-.nav-link {
+
+.nav-link,  .portfolioLinks {
     font-family: Champagne;
     font-size: 1.2rem;
     letter-spacing: .05rem;
+    color: black;
 }
 
 /* Home Page  */
@@ -67,7 +57,7 @@ body, html {
     font-size: 8rem;
     font-weight: bold;
     color: Black;
-    text-shadow: 3px 2px #998d93;
+    text-shadow: 3px 2px #c1aab5;
 }
 
 #subheader{
@@ -78,21 +68,24 @@ body, html {
 }
 
 #intro {
-    background-color: #607f75;
+    /* background-color: #607f75; */
+    background-color: #6ea393;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     width: 100%;
-    height: 15rem;
+    height: auto;
     margin: auto;
     vertical-align: baseline; 
 }
 
-#intro>#introtext{
+#introtext{
     width: auto;
     max-width: 800px;
-    height: 100%;
+    height: auto;
     padding-top: 5%;
-    margin: auto;
+    padding-bottom: 5%;
+    display: block;
+    margin: 2px auto;
     font-family: Champagne;
     font-size: 2rem;
     text-align: center!important;
@@ -171,7 +164,7 @@ h1 {
 }
 
 #resLink{
-    color: #607f75;
+    color: #6ea393;
     font-family: Spinn;
     font-size: 4.6rem;
 }
@@ -193,7 +186,7 @@ h1 {
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    font-family: Betty;
+    font-family: Champagne;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -276,7 +269,6 @@ h1 {
 .projectLinks {
     color:black;
     position: absolute;
-    max-width: 100%; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -285,7 +277,7 @@ h1 {
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    font-family: Betty;
+    font-family: Champagne;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -332,7 +324,7 @@ h1 {
 }
 
 .modal-header,.modal-body, .modal-footer{
-    background-color: #f5f7ed;
+    background-color: #ebeae8;
 }
 
 .modal-header{
@@ -379,13 +371,13 @@ h1 {
 .closebtn{
     font-family: Champagne;
     font-size: 1.3rem;
-    background-color: #dce3c5;
+    background-color: #adc4a4;
 }
 
 .launchbtn{
     font-family: Champagne;
     font-size: 1.3rem;
-    background-color: #d4b9bb;
+    background-color: #607f75;
 }
 
 /* Contact-Page */
@@ -393,15 +385,8 @@ h1 {
     background-color: #c99f9d;
 }
 
-a, .portfolioLinks{
-    font-family: Champagne;
-    font-size: 1.3rem;
-    color: black;
-}
-
 a:hover{
-    color:black;
-    
+    color:black;    
 }
 
 .log{
