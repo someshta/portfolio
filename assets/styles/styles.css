@@ -302,7 +302,7 @@ h1 {
 
 .boxThree{
     background-image: url("../images/sprig.png");
-    /* background-size: contain; */    
+    /* background-size: 80%;     */
 }
 
 .boxFour{
